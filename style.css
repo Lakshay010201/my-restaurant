@@ -1,0 +1,271 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* background-color: grey; */
+}
+
+body{
+    background-color: rgb(66, 58, 58);
+    opacity: 0;
+    transition: opacity 3s;
+}
+body::-webkit-scrollbar {
+    width: 0.5em;
+  }
+   
+  body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+   
+  body::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+  }
+:root{
+    --navbar-height: 70px;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    /* justify-content: right; */
+    font-family: 'Share Tech Mono', monospace;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.6;
+    top: 0px;
+    left: 0px;
+}
+/*navigation bar: logo and image */
+#logo{
+    /* height: 56px; */
+    margin: 0px 16px;
+}
+
+#logo img{
+    width: 101px; 
+    height: 101px;
+    margin: 5px;
+}
+
+/* navigation bar: list style */
+#navbar ul{
+    display: flex;
+    justify-content: right;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+    
+}
+#navbar ul li a{
+    display: block;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    color: white;
+    transition: all 0.5sec ease-in-out;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+    text-decoration: underline;
+    box-shadow: 2px 2px black;
+}
+/* home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 205px;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+#home::before{
+    content: "";
+    background: url('images/2022-02-22.jpg') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.6;
+    top: 0px;
+    left: 0px;
+}
+
+#home h1 a{
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.3rem;
+}
+#home button:hover{
+    /* width: 200px; */
+    box-shadow:0px 2px red, 2px 0px black;
+    height: 40px;
+}
+/* services section */
+.cars-container h1{
+    color: wheat;
+}
+#services{
+    margin: 40px;
+    /* padding: 40px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: black; */
+    border-radius: 25px;
+    
+    
+}
+#services #box{
+    /* border: solid 2px brown; */
+    padding: 10px;
+    margin: 5px;
+    border-radius: 15px;
+    width: 400px;
+    background-color: rgb(212, 209, 209);
+    
+}
+#services #box img:hover{
+    height: 200px;
+    
+    box-shadow:0px 4px rgb(0, 0, 0), 4px 0px black;
+    
+}
+#services #box img{
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+    height: 170px;
+    transition: all 0.5s ease-in-out;
+}
+#services #box p{
+    font-size: 1.2rem;
+    font-family: 'Share Tech Mono', monospace;
+}
+/* #services{} */
+
+/* country section */
+#country-section{
+    height: 344px;
+}
+#country-section::before{
+    content: "";
+    position: absolute;
+    background: url('images/bg3.jpg') no-repeat center center/cover;
+    z-index: -1;
+    width: 100%;
+    height: 40%;
+    opacity: 0.7;
+}
+#country{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#country img{
+    height: 100px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+
+}
+#country img:hover{
+    box-shadow:0px 4px red, 4px 0px black;
+    height: 150px;
+
+}
+.country-item{
+    padding: 34px;
+    /* margin: 20px; */
+}
+/* contact section */
+#contact{
+    position: relative;
+    font-family: 'Share Tech Mono', monospace;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width:100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('images/contact.jpg') no-repeat center center/cover;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+#contact-box form{
+    width: 35%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+}
+/* footer section */
+footer{
+    background-color: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+/* utility classes */
+
+a{
+    text-decoration: none;
+    color: black;
+}
+.h-primary{
+    font-size: 3.8rem;
+    padding: 20px;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+.h-secondary{
+    font-size: 2.8rem;
+    padding: 12px;
+    font-family: 'Share Tech Mono', monospace;
+}
+.btn{
+    padding: 5px 15px;
+    border: solid 3px brown;
+    background-color: transparent;
+    margin: 10px;
+    /* font-size: 1.2rem; */
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0s ease-in-out;
+}
+/* .btn:hover{
+    width: 200px;
+    box-shadow:0px 4px red, 4px 0px black;
+
+} */
+.center{
+    text-align: center;
+}
+
+

@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+    <link rel="stylesheet" href="search.css">
+</head>
+
+<body onload="document.body.style.opacity='1'">
+    <nav id="navbar">
+        <div id="logo">
+            <img src="images\CATALINA.png" alt="tesla.inc">
+        </div>
+        <div id="list">
+
+            <ul>
+                <li class="item"><a href="index.html">Home</a></li>
+                <li class="item"><a href="#services">Dishes</a></li>
+                <li class="item"><a href="https://shop.tesla.com/" target="_blank">Services</a></li>
+                <li class="item"><a href="https://www.tesla.com/about" target="_blank">About us</a></li>
+                <li class="item"><a href="https://www.tesla.com/contact" target="_blank">Contact us</a></li>
+            </ul>
+        </div>
+    </nav>
+    <input id="searchbar" onkeyup="searchdish()" type="text"
+        name="search" placeholder="Search Dishes..">
+        <ol id="list">
+            <li class="dishes">
+                <div class="box">
+                <h1 class="inline">
+                    Paneer Tikka
+                </h1>
+                <img src="images/appetizers/paneer tikka.jpg" alt="">
+                <p class="price bold">
+                    &#8377. 200
+                </p>
+                <p class="desc bold">
+                    this item contains fried paneer with chutney and chilies
+                </p>
+            </div>
+        </li>
+            <li class="dishes">
+                <div class="box">
+                    <h1 class="inline">
+                        Mushroom Tikka
+                    </h1>
+                    <img src="images/appetizers/mushroom.jpg" alt="">
+                    <p class="price bold">
+                        &#8377. 200
+                    </p>
+                    <p class="desc bold">
+                        this item contains fried paneer with chutney and chilies
+                    </p>
+                </div>
+            </li>
+            <li class="dishes">
+                <div class="box">
+                    <h1 class="inline">
+                        dry/gravy manchurian
+                    </h1>
+                    <img src="images/appetizers/manchurian.jpg" alt="">
+                    <p class="price bold">
+                        &#8377. 200
+                    </p>
+                    <p class="desc bold">
+                        this item contains fried paneer with chutney and chilies
+                    </p>
+                </div>
+            </li>
+            <li class="dishes">
+                <div class="box">
+                <h1 class="inline">
+                    onion rings
+                </h1>
+                <img src="images/appetizers/onion rings.jpg" alt="">
+                <p class="price bold">
+                    &#8377. 200
+                </p>
+                <p class="desc bold">
+                    this item contains fried paneer with chutney and chilies
+                </p>
+            </div>
+        </li>
+            <li class="dishes">
+                <div class="box">
+                <h1 class="inline">
+                    french fries
+                </h1>
+                <img src="images/appetizers/french fries.jpg" alt="">
+                <p class="price bold">
+                    &#8377. 200
+                </p>
+                <p class="desc bold">
+                    this item contains fried paneer with chutney and chilies
+                </p>
+            </div>
+        </li>
+            <li class="dishes">
+                <div class="box">
+                <h1 class="inline">
+                    garlic bread
+                </h1>
+                <img src="images/appetizers/garlic bread.jpg" alt="">
+                <p class="price bold">
+                    &#8377. 200
+                </p>
+                <p class="desc bold">
+                    this item contains fried paneer with chutney and chilies
+                </p>
+            </div>
+        </li>
+            <li class="dishes">
+                <div class="box">
+                <h1 class="inline">
+                    spring rolls
+                </h1>
+                <img src="images/appetizers/spring rolls.jpg" alt="">
+                <p class="price bold">
+                    &#8377. 200
+                </p>
+                <p class="desc bold">
+                    this item contains fried paneer with chutney and chilies
+                </p>
+            </div>
+        </li>
+            <li class="dishes">
+                <div class="box">
+                <h1 class="inline">
+                    samosa
+                </h1>
+                <img src="images/appetizers/samosa.jpg" alt="">
+                <p class="price bold">
+                    &#8377. 200
+                </p>
+                <p class="desc bold">
+                    this item contains fried paneer with chutney and chilies
+                </p>
+            </div>
+        </li>
+            <li class="dishes">
+                <div class="box">
+                <h1 class="inline">
+                    Coke/Pepsi
+                </h1>
+                <img src="images/drinks/pepsi.jpg" alt="">
+                <p class="price bold">
+                    &#8377. 40
+                </p>
+                <p class="desc bold">
+                    plain coke or pepsi with or without ice
+                </p>
+            </div>
+        </li>
+            <li class="dishes">
+                <div class="box">
+                <h1 class="inline">
+                    Pina Colada
+                </h1>
+                <img src="images/drinks/pina colada.jpeg" alt="">
+                <p class="price bold">
+                    &#8377. 120
+                </p>
+                <p class="desc bold">
+    
+                    Virgin pina colada is a refreshing vegan mocktail drink made with fresh pineapple juice, coconut milk and ice cubes.
+                </p>
+            </div>
+        </li>
+            <li class="dishes">
+                <div class="box">
+                <h1 class="inline">
+                    Margarita
+                </h1>
+                <img src="images/drinks/margarita.jpg" alt="">
+                <p class="desc bold">
+                    Virgin Margarita is made with fresh lime, lemon, and orange juice, agave nectar, and sparkling water.
+                </p>
+            </div>
+        </li>
+            <li class="dishes">
+                <div class="box">
+                    <h1 class="inline">
+                        Virgin Palmer
+                    </h1>
+                    <img src="images/drinks/arnold palmer.jpg" alt="">
+                    <p class="desc bold">
+                        Arnold Palmer, a simple mocktail enjoyable to many, is a great refresher when you want a fun drink but want to skip the alcohol
+                    </p>
+                </div>
+            </li>
+            <li class="dishes">
+                <div class="box">
+                    <h1 class="inline">
+                        Blue Lagoon
+                    </h1>
+                    <img src="images/drinks/blue lagoon.jpg" alt="">
+                    <p class="desc bold">
+                        The Blue Lagoon is a refreshing, three-ingredient cocktail containing vodka, blue curaçao and lemonade
+                    </p>
+                </div>
+            </li>
+            <li class="dishes">
+                <div class="box">
+                    <h1 class="inline">
+                        Lemonade
+                    </h1>
+                    <img src="images/drinks/lemonade.jpg" alt="">
+                    <p class="desc bold">
+                        Lemonade is a sweetened lemon-flavored beverage. There are varieties of lemonade found throughout the world.
+                    </p>
+                </div>
+            </li>
+            <li class="dishes">
+                <div class="box">
+                    <h1 class="inline">
+                        Ice Tea
+                    </h1>
+                    <img src="images/drinks/ice tea.jpg" alt="">
+                    <p class="desc bold">
+                        Iced tea is a form of cold tea. Though usually served in a glass with ice, it can refer to any tea that has been chilled or cooled.
+                    </p>
+                </div>
+            </li>
+            <li class="dishes">
+                <div class="box">
+                    <h1 class="inline">
+                        cold coffee
+                    </h1>
+                    <img src="images/drinks/cold coffee.jpg" alt="">
+                    <p class="desc bold">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore fugiat, dolorem, labore ipsa eos fugit
+                        quidem minima qui odit cumque laboriosam sequi suscipit magnam.</p>
+                </div>
+            </li>
+            <li class="dishes">
+                <div class="box">
+                    <h1 class="inline">
+                        Dal makhani
+                    </h1>
+                    <img src="images/main course/dal makhani.jpg" alt="">
+                    <p class="price bold">
+                        &#8377. 40
+                    </p>
+                    <p class="desc bold">
+                        plain coke or pepsi with or without ice
+                    </p>
+                </div>
+            </li>
+            <li class="dishes">
+                <div class="box">
+                    <h1 class="inline">
+                        Dal fry
+                    </h1>
+                    <img src="images/main course/dal fry.jpg" alt="">
+                    <p class="price bold">
+                        &#8377. 120
+                    </p>
+                    <p class="desc bold">
+        
+                        Virgin pina colada is a refreshing vegan mocktail drink made with fresh pineapple juice, coconut milk and ice cubes.
+                    </p>
+                </div>
+            </li>
+            <li class="dishes">
+                <div class="box">
+                    <h1 class="inline">
+                        Dal tadka
+                    </h1>
+                    <img src="images/main course/dal tadka.jpg" alt="">
+                    <p class="desc bold">
+                        Virgin Margarita is made with fresh lime, lemon, and orange juice, agave nectar, and sparkling water.
+                    </p>
+                </div>
+            </li>
+            <li class="dishes">
+                <div class="box">
+                    <h1 class="inline">
+                        Paneer butter masala
+                    </h1>
+                    <img src="images/main course/paneer butter masala.jpg" alt="">
+                    <p class="desc bold">
+                        Arnold Palmer, a simple mocktail enjoyable to many, is a great refresher when you want a fun drink but want to skip the alcohol
+                    </p>
+                </div>
+            </li>
+            <li class="dishes">
+                <div class="box">
+                    <h1 class="inline">
+                        Khadai paneer
+                    </h1>
+                    <img src="images/main course/kadai paneer.jpg" alt="">
+                    <p class="desc bold">
+                        The Blue Lagoon is a refreshing, three-ingredient cocktail containing vodka, blue curaçao and lemonade
+                    </p>
+                </div>
+            </li>
+            <li class="dishes">
+                <div class="box">
+                    <h1 class="inline">
+                        Shahi paneer
+                    </h1>
+                    <img src="images/main course/shahi paneer.jpg" alt="">
+                    <p class="desc bold">
+                        Lemonade is a sweetened lemon-flavored beverage. There are varieties of lemonade found throughout the world.
+                    </p>
+                </div>
+            </li>
+            <li class="dishes">
+                <div class="box">
+                    <h1 class="inline">
+                        Malai kofta
+                    </h1>
+                    <img src="images/main course/malai kofta.jpg" alt="">
+                    <p class="desc bold">
+                        Iced tea is a form of cold tea. Though usually served in a glass with ice, it can refer to any tea that has been chilled or cooled.
+                    </p>
+                </div>
+            </li>
+            <li class="dishes">
+                <div class="box">
+                    <h1 class="inline">
+                        Mix veg
+                    </h1>
+                    <img src="images/main course/mix veg.jpg" alt="">
+                    <p class="desc bold">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore fugiat, dolorem, labore ipsa eos fugit
+                        quidem minima qui odit cumque laboriosam sequi suscipit magnam.</p>
+                </div>
+            </li>
+            <li class="dishes"></li>
+            <li class="dishes"></li>
+            <li class="dishes"></li>
+            <li class="dishes"></li>
+            <li class="dishes"></li>
+            <li class="dishes"></li>
+            <li class="dishes"></li>
+            <li class="dishes"></li>
+        </ol>
+        <script>
+            function searchdish() {
+    let input = document.getElementById('searchbar').value
+    input=input.toLowerCase();
+    let x = document.getElementsByClassName('dishes');
+      
+    for (i = 0; i < x.length; i++) { 
+        if (!x[i].innerHTML.toLowerCase().includes(input)) {
+            x[i].style.display="none";
+        }
+        else {
+            x[i].style.display="list-item";                 
+        }
+    }
+}
+        </script>
+    </body>
